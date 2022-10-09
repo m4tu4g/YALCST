@@ -1,0 +1,17 @@
+name: 'YALCST'
+description: 'Yet Another LeetCode Sync Tool'
+
+inputs:
+  github-token:
+    description: 'Auth. token from Github'
+    required: true
+  leetcode-csrf-token:
+    description: 'CSRF Token from Leetcode'
+    required: true
+  leetcode-session:
+    description: 'Web Session Token from Leetcode'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
